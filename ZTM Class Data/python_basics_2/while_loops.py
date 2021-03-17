@@ -12,3 +12,8 @@ while i < 50:
 else:
     print("Counter is Finished")
 
+while True:
+    response = input("Please say Hi!: ")
+    if (response == "bye"):
+        break
+
