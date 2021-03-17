@@ -9,4 +9,8 @@ picture = [
 
 for image in picture:
     for pixel in image:
-        
+        if (pixel):
+            print("%", end =  " ")
+        else:
+            print(' ', end = " ")
+    print(' ')
