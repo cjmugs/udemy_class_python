@@ -1,7 +1,6 @@
-# a basic function
-def say_hello():
-    print('whats up bitchio!')
+# a basic function with parameter inside the brackets
+def say_hello(name):
+    print(f'whats up {name}!')
 
-say_hello()
-
-# args vs parameters
+# arguements = what is inside of the brackets
+say_hello('Chris')
