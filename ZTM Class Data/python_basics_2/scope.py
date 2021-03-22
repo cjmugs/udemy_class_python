@@ -16,3 +16,15 @@ print(confussion())
     # 2 parent a local scope
     # 3 Global scope --> no indentation   
     # 4 built in python Functions
+
+# nonlocal keyword
+# Scope - what variables do I have access to?
+def outer():
+    x = "local"
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+    inner()
+    print("outer:", x)
+outer()
