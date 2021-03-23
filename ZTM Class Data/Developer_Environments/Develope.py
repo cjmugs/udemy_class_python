@@ -3,16 +3,16 @@ a = 'TEST'
 print(a)
 
 
-def driver():
-    pass
-
-
-def checkDriverAge(age=0 ):
+def driver_id():
+    name = input('Please enter name: ')
+    age = int(input('Please enter your age: '))
+    
     if int(age) < 18:
-        print("Sorry, you are too young to drive this car. Powering off")
+        print(f"Sorry, {name} you are too young to drive this car. Powering off")
     elif int(age) > 18:
-        print("Powering On. Enjoy the ride!");
+        print(f"Powering On. Enjoy the ride {name}!");
     elif int(age) == 18:
-        print("Congratulations on your first year of driving. Enjoy the ride!")
-        
-checkDriverAge(92)
+        print(f"Congratulations {name} on your first year of driving. Enjoy the ride!")
+
+driver_id()
+
