@@ -1,8 +1,3 @@
-# Developer Tool
-a = 'TEST'
-print(a)
-
-
 def driver_id():
     name = input('Please enter name: ')
     age = int(input('Please enter your age: '))
@@ -13,6 +8,5 @@ def driver_id():
         print(f"Powering On. Enjoy the ride {name}!");
     elif int(age) == 18:
         print(f"Congratulations {name} on your first year of driving. Enjoy the ride!")
-
 driver_id()
 
