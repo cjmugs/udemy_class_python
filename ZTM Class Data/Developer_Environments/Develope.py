@@ -2,7 +2,6 @@
 def driver_id():
     name = input('Please enter name: ')
     age = int(input('Please enter your age: '))
-    
     if int(age) < 18:
         print(f"Sorry, {name} you are too young to drive this car. Powering off")
     elif int(age) > 18:
