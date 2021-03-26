@@ -2,7 +2,6 @@
 class PlayerCharacter:
     # Class object attribute
     membership = True
-
     def __init__(self, name, age):
         self.name = name
         self.age =age
@@ -13,9 +12,8 @@ class PlayerCharacter:
 
 # Another method 
     def attack(self):
-        self.attack = 50
-        print(f'you just lost {self.attack} points')
-
+        self.hit_points = 50
+        print(f'you just lost {self.hit_points} points')
      
 # Instances of the class PlayerCharacter
 player1 = PlayerCharacter('Max', 2)
