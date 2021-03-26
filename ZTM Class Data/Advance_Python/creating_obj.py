@@ -1,5 +1,5 @@
 # Creating our own oop
-
+# This is the blueprint for the rest of the code
 class PlayerCharacter:
     def __init__(self, name, age):
         self.name = name
