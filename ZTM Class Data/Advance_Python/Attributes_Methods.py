@@ -1,5 +1,6 @@
 
 class PlayerCharacter:
+    # Class object attribute
     membership = True
     def __init__(self, name, age):
         self.name = name
