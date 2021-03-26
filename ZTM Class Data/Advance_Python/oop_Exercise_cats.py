@@ -7,7 +7,9 @@ class Cat:
 
 
 # 1 Instantiate the Cat object with 3 cats
-
+cat1 = Cat('Fluffy', 10)
+cat2 = Cat('Mittens', 6)
+cat3 = Cat('Dr. Xavier Jones Burmingham the third', 102) 
 
 
 # 2 Create a function that finds the oldest cat
