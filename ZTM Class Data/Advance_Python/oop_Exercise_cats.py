@@ -1,7 +1,4 @@
 #Given the below class:
-from typing import cast
-
-
 class Cat:
     species = 'mammal'
     def __init__(self, name, age):
