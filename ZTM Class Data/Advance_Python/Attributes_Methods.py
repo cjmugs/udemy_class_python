@@ -10,6 +10,12 @@ class PlayerCharacter:
 # A method to
     def shout(self):
         print(f'Hello my name is {self.name} and my age is {self.age}')
+
+# Another method 
+    def attack(self):
+        self.attack = 50
+        print(f'you just lost {self.attack} points')
+
      
 # Instances of the class PlayerCharacter
 player1 = PlayerCharacter('Max', 2)
@@ -21,3 +27,5 @@ print(player1.shout())
 print(player2.shout())
 print(player3.shout())
 print(player4.shout())
+
+print(player1.attack())
