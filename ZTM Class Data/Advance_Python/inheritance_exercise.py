@@ -7,11 +7,9 @@ class Pets():
         for animal in self.animals:
             print(animal.walk())
 
-class Cat():
+class Cat(Pets):
     is_lazy = True
     def __init__(self, name, age):
-        my_cats = []
-        my_cats.append(Cat)
         self.name = name
         self.age = age
 
@@ -21,6 +19,7 @@ class Cat():
 # Subclasses of Cat
 class Simon(Cat):
     def sing(self, sounds):
+        sounds = "Meow Meow Meow"
         return f'{sounds}'
 
 class Sally(Cat):
@@ -38,8 +37,6 @@ my_pets3 = Cat('Simon', 30)
 print(my_pets1.walk())
 print(my_pets2.walk())
 print(my_pets3.walk())
-
-
 
 
 #2 Create a list of all of the pets (create 3 cat instances from the above)
