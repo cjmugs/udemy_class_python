@@ -11,7 +11,7 @@ class Wizard(User):
         self.power = power
 
     def attack(self):
-        print(f'attacking with {self.power}')
+        print(f'{self.name} is attacking with {self.power}')
 
 class Archer(User):
     def __init__(self, name, num_arrows):
@@ -19,7 +19,7 @@ class Archer(User):
         self.num_arrows = num_arrows
 
     def attack(self):
-        print(f'attacking with arrows left- {self.num_arrows}')
+        print(f'{self.name} is attacking with arrows left- {self.num_arrows}')
 
 
 # Instance of the parent class
