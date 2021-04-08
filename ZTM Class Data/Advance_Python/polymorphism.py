@@ -24,7 +24,7 @@ class Archer(User):
 
 # Instance of the parent class
 wizard1 = Wizard('Bill', 50)
-archer1 = Archer('Mike', 100)
+archer1 = Archer('Mike', 10)
 
 # Calls the class and method
 archer1.attack()
