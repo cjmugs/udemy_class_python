@@ -17,6 +17,7 @@ class Cat():
     def walk(self):
         return f'{self.name} is just walking around'
 
+# Subclasses of Cat
 class Simon(Cat):
     def sing(self, sounds):
         return f'{sounds}'
@@ -25,7 +26,10 @@ class Sally(Cat):
     def sing(self, sounds):
         return f'{sounds}'
 
-#1 Add nother Cat
+class Mike(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
 
 #2 Create a list of all of the pets (create 3 cat instances from the above)
 my_cats = []
