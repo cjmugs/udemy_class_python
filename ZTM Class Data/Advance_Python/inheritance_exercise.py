@@ -41,6 +41,7 @@ print(my_pets3.walk())
 
 
 
+
 #2 Create a list of all of the pets (create 3 cat instances from the above)
 my_cats = []
 
