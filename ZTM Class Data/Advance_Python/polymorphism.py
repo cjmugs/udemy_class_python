@@ -30,3 +30,7 @@ archer1 = Archer('Mike', 10)
 archer1.attack()
 wizard1.attack()
 
+# same output as calling the class and method
+for char in [wizard1, archer1]:
+    char.attack()
+
