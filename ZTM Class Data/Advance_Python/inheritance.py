@@ -6,7 +6,13 @@ class User():
         
         # inherited from the parent class inside the ()
 class Member(User):
-    pass
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
 
-user1 = Member()
+    def attack(self):
+        print(f'attacking with {self.power}')
+
+user1 = Member('Bill', 50)
 print(user1.sign_in())
+print(user1.attack())
