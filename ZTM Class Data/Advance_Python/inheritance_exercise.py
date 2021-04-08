@@ -37,7 +37,7 @@ my_pets3 = Cat('Simon', 30)
 
 print(my_pets1.walk())
 print(my_pets2.walk())
-print(my_pets3.sing())
+print(my_pets3.walk())
 
 
 
