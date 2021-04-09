@@ -25,6 +25,7 @@ class Toy():
 
 
 action_figure = Toy('red', 0)
+
 print(action_figure.__str__())
 print(str(action_figure))
 print(len(action_figure))
