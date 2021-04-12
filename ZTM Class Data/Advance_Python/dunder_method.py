@@ -1,2 +1,6 @@
 class Toy():
-    pass
+    def __init__(self, color, age):
+        self.color = color
+        self.age = age
+
+action_figure = Toy('red', 0)

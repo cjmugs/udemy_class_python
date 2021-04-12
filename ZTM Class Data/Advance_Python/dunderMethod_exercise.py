@@ -18,12 +18,12 @@ class Toy():
     return "deleted"
 
   def __call__(self):
-      return('yes??')
+      return('This is Call a function')
 
   def __getitem__(self,i):
       return self.my_dict[i]
 
-
+# Instance of Toy
 action_figure = Toy('red', 0)
 
 print(action_figure.__str__())
