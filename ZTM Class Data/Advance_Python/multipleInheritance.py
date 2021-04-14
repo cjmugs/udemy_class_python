@@ -2,7 +2,6 @@ class User():
     def sign_in(self):
         print('Please sign in . . . ')
 
-        
         # inherited from the parent class inside the () // Member is the subclass of User
 class Human(User):
     def __init__(self, name, power):
@@ -14,8 +13,8 @@ class Human(User):
 
 class Monster(Human):
     def __init__(self, name, power, sp_abilty):
-        self.sp_abilty = sp_abilty
         Human.__init__(self, name, power)
+        self.sp_abilty = sp_abilty
        
 
 # Instance of the parent class
@@ -26,4 +25,7 @@ monster1 = Monster('Goldbar', 150, "fire")
 person1.sign_in()
 person1.attack()
 monster1.attack()
-print(person1.name)
+print(f'{person1.name} {person1.power}')
+print(f'{monster1.name} {monster1.power} {monster1.sp_abilty}')
+print(monster1.name)
+print(monster1.sp_abilty)
