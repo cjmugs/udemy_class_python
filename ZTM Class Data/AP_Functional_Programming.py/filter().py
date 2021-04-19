@@ -14,5 +14,5 @@ print(list(map(multiply_by_2, [12,14,16])))
 
 print(my_list)
 
-# Filter function
+# Filter function - 
 print(list(filter(check_odd, my_list)))
