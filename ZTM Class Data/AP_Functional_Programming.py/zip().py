@@ -1,4 +1,5 @@
-my_list = [1,2,3,4,5,6,7,8,9]
+my_list = [1,2,3,4,5,6]
+your_list = [10,20,30,40,50,60]
 
 # Filter Function
 def multiply_by_2(item):
@@ -16,3 +17,7 @@ print(my_list)
 
 # Filter function - 
 print(list(filter(check_odd, my_list)))
+
+
+# Zip function - 
+print(list(zip(my_list, your_list)))
