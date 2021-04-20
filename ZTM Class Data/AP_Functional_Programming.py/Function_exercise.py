@@ -24,3 +24,7 @@ print(list(filter(high_score, scores)))
 
 
 #4 Combine all of the numbers that are in a list on this file using reduce (my_numbers and scores). What is the total?
+def accumulator(acc, item):
+    return acc + item
+
+print(reduce(accumulator, (my_numbers + scores)))
