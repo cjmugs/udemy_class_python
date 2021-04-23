@@ -1,9 +1,13 @@
-# Set Comprehension
+# Set Dictionary
 
-# Set uses curly brackets
-my_list = {char for char in "Jello"}
+simple_dict = {
+    'a': 1,
+    'b': 2
+}
 
-my_list2 = {num for num in range(0,300)}
+# can add for loops and if statements
+my_dict = {key: value**2 for key, value in simple_dict.items() 
 
-print(my_list)
-print(my_list2)
+# This produces only even using  --> %2==0
+if value%2 == 0}
+print(my_dict)
