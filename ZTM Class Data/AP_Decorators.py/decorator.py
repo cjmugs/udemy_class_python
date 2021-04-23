@@ -7,4 +7,5 @@ def greet():
     print("Whats up!")
 
 a = hello(greet)
+
 print(a)
