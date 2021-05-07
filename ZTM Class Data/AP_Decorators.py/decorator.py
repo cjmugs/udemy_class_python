@@ -12,7 +12,6 @@ print(a)
 
 
 # The Power of Decorators
-
 def my_decorator(func):
     def wrap_func():
         print('***************')
