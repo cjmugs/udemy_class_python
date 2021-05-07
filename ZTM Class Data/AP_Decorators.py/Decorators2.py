@@ -4,7 +4,7 @@ def my_decorator(func):
         print('***************')
         func()
         print('***************')
-    return wrap_func()
+    return wrap_func
 
 @my_decorator
 def hello_hi():
