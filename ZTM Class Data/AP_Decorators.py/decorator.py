@@ -1,15 +1,11 @@
 # Decorators have the @ -->followed by a name
-
 def hello(func):
     func()
 
 def greet():
     print("Whats up!")
-
 a = hello(greet)
-
 print(a)
-
 
 # The Power of Decorators (Decorators 2)
 def my_decorator(func):
@@ -26,7 +22,6 @@ def hello_hi():
 @my_decorator
 def bye():
     print('See ya later')
-
 hello_hi()
 bye()
 
