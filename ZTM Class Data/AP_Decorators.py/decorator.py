@@ -21,12 +21,12 @@ def my_decorator(func):
     return wrap_func()
 
 @my_decorator
-def hello():
+def hello_hi():
     print('Hellollloooo')
 
 @my_decorator
 def bye():
     print('See ya later')
 
-hello()
+hello_hi()
 bye()
