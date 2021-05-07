@@ -11,7 +11,7 @@ a = hello(greet)
 print(a)
 
 
-# The Power of Decorators
+# The Power of Decorators (Decorators 2)
 def my_decorator(func):
     def wrap_func():
         print('***************')
@@ -29,3 +29,5 @@ def bye():
 
 hello_hi()
 bye()
+
+# (Decorators 3)
