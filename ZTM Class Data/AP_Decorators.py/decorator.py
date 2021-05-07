@@ -24,4 +24,9 @@ def my_decorator(func):
 def hello():
     print('Hellollloooo')
 
+@my_decorator
+def bye():
+    print('See ya later')
+
 hello()
+bye()
