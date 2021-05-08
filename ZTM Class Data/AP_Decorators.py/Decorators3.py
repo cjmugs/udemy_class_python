@@ -7,7 +7,7 @@ def my_decorator(func):
     return wrap_func
 
 @my_decorator
-def hi(greeting, emoji = ':('):
+def hi(greeting, emoji = ':) :) :)'):
     print(greeting, emoji)
 
-hi('Whats up yo')
+hi('Whats up Ben, you are crazy')
