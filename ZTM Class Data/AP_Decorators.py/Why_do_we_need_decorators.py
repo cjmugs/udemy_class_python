@@ -1,5 +1,6 @@
 #performance decorator.
 from time import time
+
 def performance(fn):
   def wrapper(*args, **kwargs):
     t1 = time()
