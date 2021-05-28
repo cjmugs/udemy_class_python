@@ -1,5 +1,5 @@
 # Error Handling
 # Syntax Error
 
-def hooo()
+def hooo():
     pass
