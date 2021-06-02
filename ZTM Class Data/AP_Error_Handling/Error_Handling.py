@@ -8,3 +8,8 @@ while True:
 
     except:
         print("Not a number dumbass, please enter a number")
+
+# To break out of the loop
+    else:
+        print("Program has ended")
+        break
