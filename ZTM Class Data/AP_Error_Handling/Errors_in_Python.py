@@ -2,4 +2,5 @@
 # Syntax Error
 
 def hooo():
-    pass
+    1 + name
+    
