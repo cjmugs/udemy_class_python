@@ -2,7 +2,6 @@
 
 from time import time
 
-
 def performance(fn):
     def wrapper(*args, **kawrgs):
         t1 = time()
