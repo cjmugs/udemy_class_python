@@ -7,4 +7,4 @@ while True:
         print(age)
 
     except:
-        print("Not a value, please enter a number")
+        print("Not a number dumbass, please enter a number")
