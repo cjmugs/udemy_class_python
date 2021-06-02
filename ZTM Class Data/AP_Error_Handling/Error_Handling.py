@@ -13,3 +13,14 @@ while True:
     else:
         print("Program has ended")
         break
+
+
+# Error Handling Example 2
+def added(num1, num2):
+    try:
+        return num1 + num2
+
+    except TypeError:
+        print('Something is wrong')
+
+print(added(1, 2))
