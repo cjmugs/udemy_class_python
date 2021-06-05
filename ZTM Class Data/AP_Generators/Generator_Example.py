@@ -7,6 +7,6 @@ def make_list(num):
     return result
 
 my_list =  make_list(100)
-print(list(range(1000000)))
+print(list(range(100000000)))
 
 # Generators are iterable
