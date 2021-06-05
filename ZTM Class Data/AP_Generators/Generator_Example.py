@@ -8,3 +8,5 @@ def make_list(num):
 
 my_list =  make_list(100)
 print(list(range(1000000)))
+
+# Generators are iterable
