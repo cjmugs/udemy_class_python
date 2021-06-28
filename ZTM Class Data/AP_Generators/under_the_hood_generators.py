@@ -1,13 +1,11 @@
 def special_for(iterable):
-      iterator = iter(iterable)
-  while True:
+    iterator = iter(iterable)
+while True:
     try:
-      iterator*5
-      next(iterator)
+        iterator*5
+        next(iterator)
     except StopIteration:
       break
-
-
 class MyGen:
   current = 0
   def __init__(self, first, last):
