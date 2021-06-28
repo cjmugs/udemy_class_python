@@ -1,4 +1,10 @@
 
 def generator_function(num):
-    for i in range(1000):
-        yield i
+    for i in range(num):
+        yield i*2
+
+g = generator_function(100)
+next(g)
+next(g)
+print(next(g))
+    
