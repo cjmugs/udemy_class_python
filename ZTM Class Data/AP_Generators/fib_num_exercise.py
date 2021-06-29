@@ -1,3 +1,4 @@
+# Creating Fib Numbers using a generator
 def fib(number):
     a = 0
     b = 1
@@ -9,3 +10,7 @@ def fib(number):
         b = temp + b
 for x in fib(21):
     print(x)
+
+# Creating Fib Numbers using a list
+
+
