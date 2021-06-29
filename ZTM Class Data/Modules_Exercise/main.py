@@ -1,7 +1,7 @@
-import utility
+import comp
 
-print(utility.divide(10, 2))
-print(utility.multiply(10, 2))
+print(comp.divide(10, 2))
+print(comp.multiply(10, 2))
 
 
 
