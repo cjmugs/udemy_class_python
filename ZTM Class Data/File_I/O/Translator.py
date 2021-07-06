@@ -8,8 +8,10 @@ try:
         read = file.read()
         translation = translator.translate(read)
         translation2 = translator2.translate(read)
-        print(translation)
-        print(translation2)
+        with open('C:/Users/cjmug/Desktop/Translated.txt', mode='w') as new_file:
+            new_file.write(translation2)
+            print(translation)
+            print(translation2)
     file.close()
 
 except FileNotFoundError as err:
