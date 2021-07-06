@@ -1,12 +1,14 @@
-import re
-pattern = re.compile(r"([a-zA-Z]).([a])")
-string = "Fuck my wife annoys the shit out of me!"
-a = pattern.search(string)
-b = pattern.findall(string)
-c = pattern.fullmatch(string)
-d = pattern.match(string)
+# a form of validation using regular expression
+# email validation 
 
+import re
+
+pattern = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+)
+string = 'b@b.com'
+
+a = pattern.search(string)
 print(a)
-print(b)
-print(c)
-print(d)
+
+
+
