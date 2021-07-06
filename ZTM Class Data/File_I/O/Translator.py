@@ -1,3 +1,5 @@
+import translate
+
 try:
     with open('C:/Users/cjmug/Desktop/Translator.txt', mode='r') as file:
         read = file.read()
