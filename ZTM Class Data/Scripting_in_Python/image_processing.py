@@ -2,7 +2,10 @@ import os
 import sys
 from PIL import Image
 
-image_folder = sys.argv[1]
-output_folder = sys.argv[2]
+# grabs the first and second arguements
+image_folder = sys.argv[0]
+output_folder = sys.argv[1]
 
-print(image_folder, output_folder)
+# check is new/exist, if not creates one
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
