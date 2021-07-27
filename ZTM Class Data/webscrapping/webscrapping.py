@@ -11,7 +11,7 @@ votes = soup.select('.score')
 def cch(links, votes):
     hn =[]
     for idx, item in enumerate(links):
-        title = links[idx].getText()
+        title = links[idx].get_text()
         hn.append(title)
         return hn
 
