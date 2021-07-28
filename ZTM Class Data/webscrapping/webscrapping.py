@@ -14,7 +14,7 @@ def cch(links, votes):
         title = links[idx].get_text()
         href = links[idx].get('href', None)
         hn.append(title)
-        return hn
+    return hn
 
 print(cch(links, votes))
 
