@@ -13,7 +13,7 @@ def cch(links, votes):
     for idx, item in enumerate(links):
         title = links[idx].get_text()
         href = links[idx].get('href', None)
-        hn.append(title)
+        hn.append({'title': title, 'link': href})
     return hn
 
 print(cch(links, votes))
