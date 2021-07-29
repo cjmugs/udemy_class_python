@@ -7,7 +7,7 @@ print(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello Chris!</p>"
+    return "<p>HELLO CHRIS, THIS IS JUST A TEST SITE <br> FOR DEVELOPMENT MODE ONLY</p>"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
