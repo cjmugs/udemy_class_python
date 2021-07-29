@@ -1,22 +1,23 @@
 # Web Scrapping and APIs
 import requests
 from bs4 import BeautifulSoup
+import pprint
 
 
 response = requests.get('https://news.ycombinator.com/news')
 soup = BeautifulSoup(response.text, 'html.parser')
 links = soup.select('.storylink')
-votes = soup.select('.score')
+subtext = soup.select('.subtext')
 
-def cch(links, votes):
+def cch(links, subtext):
     hn =[]
     for idx, item in enumerate(links):
-        title = links[idx].get_text()
-        href = links[idx].get('href', None)
-        points = int(votes[idx].get_text().replace('points', ''))
-        print(points)
-        hn.append({'title': title, 'link': href})
+        title = item.get_text()
+        href = item.get('href', None)
+        vote = subtext[idx].select('.score')
+        if len(vote):
+            points = int(vote[0].get_text().replace('points', ''))
+            hn.append({'title': title, 'link': href, 'votes': points})
     return hn
-
-print(cch(links, votes))
+pprint.pprint(cch(links, subtext))
 
