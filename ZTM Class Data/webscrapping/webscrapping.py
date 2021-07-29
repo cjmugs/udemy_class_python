@@ -17,7 +17,8 @@ def cch(links, subtext):
         vote = subtext[idx].select('.score')
         if len(vote):
             points = int(vote[0].get_text().replace('points', ''))
-            hn.append({'title': title, 'link': href, 'votes': points})
+            if points > 99:
+                hn.append({'title': title, 'link': href, 'votes': points})
     return hn
 pprint.pprint(cch(links, subtext))
 
