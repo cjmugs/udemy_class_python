@@ -9,6 +9,9 @@ soup = BeautifulSoup(response.text, 'html.parser')
 links = soup.select('.storylink')
 subtext = soup.select('.subtext')
 
+def news_sort(hnlist):
+    return sorted(hnlist, key=lambda k:k['votes'], reverse=True)
+
 def cch(links, subtext):
     hn =[]
     for idx, item in enumerate(links):
@@ -19,6 +22,6 @@ def cch(links, subtext):
             points = int(vote[0].get_text().replace('points', ''))
             if points > 99:
                 hn.append({'title': title, 'link': href, 'votes': points})
-    return hn
+    return news_sort(hn)
 pprint.pprint(cch(links, subtext))
 
