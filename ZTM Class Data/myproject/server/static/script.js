@@ -1,7 +1,5 @@
 
-alert("THIS IS ONLY A TEST")
-
 function myFunction() {
-    document.getElementById("button").innerHTML = "YOU CLICKED ME!";}
+    document.getElementById("button").innerHTML = "RUNNING PROGRAM . . . .!";}
 
-console.log('Hello and thanks for accessing me . . .')
+console.log('Hello and thanks for accessing me . . .but sadly I am just a server')
