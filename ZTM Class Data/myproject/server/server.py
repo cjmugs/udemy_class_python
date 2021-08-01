@@ -13,5 +13,9 @@ def hello_world():
 def page_2():
     return render_template('page2.html')
 
+@app.route("/index.html")
+def back():
+    return render_template('index.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
